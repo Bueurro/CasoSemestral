@@ -27,6 +27,13 @@ Footer{
     position: -ms-page;
     left: 0%;
     bottom: 0%;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+    padding: 60px 0;
 }
 
 
@@ -46,6 +53,14 @@ Footer{
 
 .movder{
     margin-left: 65px;
+}
+
+.btnmedia{
+    margin-left: 30px;
+    margin-top: 25px;
+    margin-right: 5px;
+    max-width: 150px;
+    max-height: 40px;
 }
 
 .fixcol{
@@ -71,4 +86,49 @@ Footer{
     text-align: center;
     padding-top: 15px;
     padding-bottom: 10px;
+}
+
+.imgcartas{
+    max-width: 300px
+}
+
+.cfooter{
+    margin-top: 10px;
+}
+
+@media (max-width: 1360px){
+    .imgcartas{
+        max-width: 200px
+    }
+}
+
+@media (max-width: 1010px){
+    .imgcartas{
+        max-width: 120px
+    }
+    .btnmedia{
+        margin: 25px 15px 15px 15px;
+        max-width: 150px;
+        max-height: 80px;
+    }
+    .cfooter{
+        margin-top: 80px;
+    }
+}
+
+@media (max-width: 575px){
+    .imgcartas{
+        max-width: 400px
+    }
+}
+
+@media (max-width: 800px){
+    .imgcartas{
+        max-width: 220px
+    }
+    .btnmedia{
+        margin: 15px 15px 15px 15px;
+        max-width: 150px;
+        max-height: 80px;
+    }
 }

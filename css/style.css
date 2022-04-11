@@ -1,3 +1,5 @@
+/*ENCABEZADO*/
+
 .encabezado{
     color: whitesmoke;
     background-color: rgb(96, 62, 133);
@@ -6,7 +8,9 @@
 .fuente{
     font-family: Trebuchet MS;
 }
+/*FIN DE ENCABEZADO*/
 
+/*INICIO DE NAVBAR*/
 .navfondo{
     background-color: aqua;
 }
@@ -20,6 +24,9 @@
     border-radius: 5px;
 }
 
+/*FIN DEL NAVBAR*/
+
+/*IMAGEN DE LA SUSCRIPCION*/
 .suscripciondonacion a{
     width: 100%;
     position: -ms-page;
@@ -32,6 +39,9 @@
     display: flex;
     flex-direction: column;
 }
+/*FIN SUSCRIPCION*/
+
+/*COMIENZO DE FOOTER*/
 
 Footer{
     background-color: rgb(96, 62, 133);
@@ -49,7 +59,6 @@ Footer{
     padding: 10px;
 }
 
-
 .footercontenedoriz{
     background-color: rgb(72, 46, 100);
     border-radius: 15px;
@@ -64,23 +73,21 @@ Footer{
     margin-bottom: 5px;
 }
 
+/*FIN DEL FOOTER*/
+
+
+/*APARTADO DEL MODAL (SEGUIMIENTO)*/
 .movder{
     margin-left: 65px;
 }
 
+/*BOTONES DE SEGUIMIENTO/CARRITO/LOGOUT*/
 .btnmedia{
     margin-left: 10px;
     margin-top: 25px;
     margin-right: 25px;
     max-width: 150px;
     max-height: 80px;
-}
-
-.fixcol{
-    width: 100%;
-    position: fixed;
-    left: 0%;
-    right: 0%;
 }
 
 /**perfil**/
@@ -100,17 +107,34 @@ Footer{
     margin-top: 2px;
 }
 
+
+/*CARTA DESTACAS (Que estan en el home)*/
 .cartacss{
     margin-top: 30px;
     margin-bottom: 40px;
     min-height: 480px;
+    box-shadow: 0 0 15px rgb(0, 0,0) ;
+
 }
+
+.cartacss :hover{
+    transition: 0.5s all;
+    transform: scale(0.9);
+    cursor: pointer;
+}
+
 
 .cartacss .card-link{
     color: black;
     text-decoration: none;
+    font-weight: 500;
+    font-size: large;
 }
 
+/*CARTAs DESTACAS (Que estan en el home)*/
+
+
+/*COLOR-CARACTERITICAS DEL NAVBAR*/
 .pdcss{
     background-color: aqua;
     text-align: center;
@@ -118,14 +142,27 @@ Footer{
     padding-bottom: 10px;
 }
 
+/*COLOR-CARACTERITICAS DEL SUBTITULO DEPENDIENDO EL PRODUCTO*/
+.pdcsso{
+    background-color: whitesmoke;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+/*TAMAÑO DE LAS CARTAS DESTACAS EN HOME*/
 .imgcartas{
     max-width: 300px
 }
 
+
+/*Clase para darle un margen al footer */
 .cfooter{
     margin-top: 10px;
 }
 
+
+/*Pagina de Login*/
 .login{
     width: 900px;
     height: 629px;
@@ -190,32 +227,31 @@ Footer{
     text-decoration: none;
 }
 
+/*FIN DEL LOGIN*/
+
+
+/*?*/
 .arreglo-container-carrito{
     margin-top: 20px;
     margin-bottom: 300px;
 }
-
+/*?*/
 .arreglo-container-carrito .items{
     margin: 10px 10px;
 }
 
-.conte_parent{
-    display:flex;
-    justify-content:space-around;
-    align-items:center;
-    flex-wrap:wrap;
-  
-  }
+/*cartas de productos*/
   .conte{
       height: 510px;
       width: 350px;
       box-shadow: 0 0 15px rgb(0, 0,0) ;
       margin: 30px 30px;
+      border-radius: 5px;
   }
   .conte .card{
       height: 200px;
       width: 100%;
-      margin-bottom: 170px;
+      margin-bottom: 150px;
   }
   .card img{
       margin: auto;
@@ -236,9 +272,11 @@ Footer{
       width: 100%;
   }
   .informacion h1{
+
       font-family: sans-serif;
-      font-size: 1.2em;
+      font-size: 20px;
       text-align: center;
+      font-weight: 600;
       color: #333;
       margin-bottom: 10px;
   }
@@ -255,6 +293,7 @@ Footer{
       font-size: .9em;
       color: red;
   }
+   /*PRECIOS :D*/
   .precio {
       height:50px;
       width: 85%;
@@ -264,27 +303,107 @@ Footer{
       justify-content: space-between;
       align-items: center;
   }
-  .box{
-      width: 80px;
-  }
    .precio1{
       color: red;
-      font-size: .8em;
+      font-size: 19px;
   }
   .precio .precio2{
-      font-size: 1.5em;
-  }
-  .shoping{
-      font-size: 1.5em;
-      color: #555;
+      font-size: 23px;
   }
 
-.pdcsso{
-    background-color: rgb(255, 255, 255);
-    text-align: center;
-    padding-top: 15px;
-    padding-bottom: 10px;
+
+
+/*BOTON PARA AGREGAR AL CARRITO*/
+.btnm{
+    margin-left: 30px;
+    background-color: rgb(96, 62, 133);
+    border-radius: 15px;
+    color: white;
+    font-style: oblique;
+    margin-bottom: 30px;
 }
+
+
+/*LAS TRANSICIONES DE LAS CARTAS*/
+.conte:hover{
+    transition: 0.5s all;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+/*FIN DE CARTAS DE PRODUCTOS*/
+
+
+
+
+/*SUSCRIPCIONES*/
+/*Contenedor de las tablas para la suscripcion*/
+.contenedor{
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/*Tabla para la suscripcion*/
+.tabla{
+    width: 33%;
+    height: 550px;
+    margin: auto;
+    border: 1px solid rgb(96, 62, 133);
+    border-radius: 4px;
+    box-shadow: 0px 0px 4px 0px rgb(96, 62, 133);
+    padding: 60px;
+    text-align: center;
+    flex-grow: 1;
+    color: rgb(96, 62, 133);
+}
+
+.tabla>h2{
+    display: block;
+    font-size: 30px;
+    margin-bottom: 35px;
+}
+
+
+.tabla > h3{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.tabla > p{
+    display: block;
+    margin-bottom: 20px;
+}
+
+/*Boton De la tabla suscripcion*/
+.boton{
+    display: inline-block;
+    width: 150px;
+    padding: 12px;
+    background: rgb(255, 255, 133);
+    text-decoration: none;
+    color: 343759;
+    border-radius: 100px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    margin: auto;
+}
+/*Animacion al acercar el cursos a la tabla*/
+.tabla:hover{
+    background: rgb(96, 62, 133);
+    color: #f1f1f2;
+    transition: 0.5s all;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+/*FIN DE SUSCRIPCION*/
+
+
 
 @media (max-width: 1360px){
     .imgcartas{

@@ -24,6 +24,16 @@
     border-radius: 5px;
 }
 
+.logomedia{
+    max-width: 100px; 
+    max-height: 80px; 
+    margin: 8px;
+}
+
+.eslogan{
+    margin: 35px 30px;
+}
+
 /*FIN DEL NAVBAR*/
 
 /*IMAGEN DE LA SUSCRIPCION*/
@@ -117,6 +127,7 @@ Footer{
 
 }
 
+/*ANIMACION DE LOS PRODUCTOS DESTACADOS*/
 .cartacss :hover{
     transition: 0.5s all;
     transform: scale(0.9);
@@ -230,16 +241,6 @@ Footer{
 /*FIN DEL LOGIN*/
 
 
-/*?*/
-.arreglo-container-carrito{
-    margin-top: 20px;
-    margin-bottom: 300px;
-}
-/*?*/
-.arreglo-container-carrito .items{
-    margin: 10px 10px;
-}
-
 /*cartas de productos*/
   .conte{
       height: 510px;
@@ -321,6 +322,7 @@ Footer{
     color: white;
     font-style: oblique;
     margin-bottom: 30px;
+    border: solid;
 }
 
 
@@ -402,6 +404,20 @@ Footer{
     cursor: pointer;
 }
 /*FIN DE SUSCRIPCION*/
+/*CARRITO AJUSTE IMAGENES*/
+.tgrand{
+    min-width: 300px;
+
+}
+.tgrand2{
+    min-width: 270px;
+
+}
+
+.tdimg{
+    max-width: 100px;
+}
+/*FIN DEL CARRITO*/
 
 
 
@@ -429,6 +445,7 @@ Footer{
     .imgcartas{
         max-width: 400px
     }
+
 }
 
 @media (max-width: 800px){
@@ -436,8 +453,17 @@ Footer{
         max-width: 220px
     }
     .btnmedia{
-        margin: 15px 15px 15px 15px;
-        max-width: 150px;
+        max-width: 80px;
         max-height: 80px;
+        font-size: 10px;
+    }
+    .nombreUsuario{
+        font-size: 10px;
+    }
+    .logomedia{
+        margin-top: 30px;
+    }
+    .eslogan{
+        font-size: 20px;
     }
 }

@@ -17,10 +17,11 @@
             <div class="col-sm-12 encabezado fuente">
                 <div class="row">
                     <div class="col-sm-6 d-flex mt-2">
-                        <a href="homeLogin.html"><img src="img/Logo.png" alt="" style="max-width: 100px; max-height: 80px; margin: 8px;"></a>
+                        <a href="homeLogin.html"><img src="img/Logo.png" alt="" class="logomedia"></a>
                         <h5 style="margin: 35px 30px;">Dandole la mejor vida a tus mascotas desde 1732 a.c.</h5>
                     </div>
                     <div class="col-sm-6 mt-2 d-flex justify-content-end ">
+                        <a href="historial.html"><button type="button" class="btn btn-info btnmedia"><i class="fa-solid fa-clock"></i> Historial</button></a>
                         <a href="#"><button type="button" class="btn btn-info btnmedia" data-bs-toggle="modal" data-bs-target="#myModal"><i class="fa-solid fa-truck-fast"></i> Seguimiento</button></a>
                         <a href="carrito.html"><button type="button" class="btn btn-info btnmedia"><i class="fa-solid fa-basket-shopping"></i> Carrito</button></a>
                         <div class="perfilhome mt-2 mb-2">
@@ -97,7 +98,7 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-sm-6"><div>Codigo: <input type="number" name="spnCodigoSeguimiento" id="spnCodigoSeguimiento"></div></div>
-                        <div class="col-sm-6"><p></p><div class="movder"><button type="button" class="btn btn-success"> Ver Seguimiento</button></div></div>
+                        <div class="col-sm-6"><p></p><div class="movder"><button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modaldetalles"> Ver Seguimiento</button></div></div>
                     </div>
                 </div>                
             </div>
@@ -129,6 +130,49 @@
         </div>
     </div>
     </div>
+    <!-- modal seguimiento detalles -->
+    <div>
+        <div class="modal fade" id="modaldetalles">
+            <div class="modal-dialog">
+            <div class="modal-content">
+    
+                <!-- Modal Header -->
+                <div class="modal-header">
+                <h4 class="modal-title">Detalles de tu pedido:</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <h4>Estado del codigo: 4321</h4>
+                            <div class="container mt-3">        
+                                <table class="table table-bordered">
+                                  <thead>
+                                    <tr>
+                                      <th>Courrier</th>
+                                      <th>Estado</th>
+                                      <th>Fecha estimada</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td>Chilexpress</td>
+                                      <td>En camino</td>
+                                      <td>29/04/2022</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                        </div>
+                    </div>                
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    
         <!-- CDN JS -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     </body>
